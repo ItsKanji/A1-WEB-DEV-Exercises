@@ -1,0 +1,47 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Image Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Image Styling */
+img {
+    width: 400px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    filter: brightness(90%) contrast(110%) saturate(120%);
+}
+
+/* Hover Effect */
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(100%) contrast(120%);
+}
+
+/* Caption Styling */
+figcaption {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #666;
+}
+
+/* Link Styling */
+figcaption a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #17072b;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.welcome {
+    width: 65%;
+}
+
+.welcome h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.welcome img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Sidebar */
+.lineup {
+    background-color: #172d67;
+    color: #fff;
+    padding: 15px;
+    width: 30%;
+}
+
+.lineup h2 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.lineup ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lineup ul li {
+    margin-bottom: 10px;
+}
+
+.lineup-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.lineup-images img {
+    width: 48%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #8c15e9;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
