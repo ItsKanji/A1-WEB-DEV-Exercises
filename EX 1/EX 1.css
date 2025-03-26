@@ -1,0 +1,23 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+    color: black; /* Set all text to black */
+}
+
+/* Recipe title */
+h1 {
+    color: black; /* Ensure the title is black */
+    text-align: center; /* Center the title */
+}
+
+/* Section headings */
+h2, h3 {
+    color: black; /* Make all headings black */
+}
+
+/* List styles */
+ul, ol {
+    margin-left: 20px;
+}
