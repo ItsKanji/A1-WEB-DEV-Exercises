@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Petrol Calculator</title>
+</head>
+
+<body>
+    <h1>Petrol Calculator</h1><br>
+    <form onsubmit="Calculate(event)">
+
+        <!-- Input Cost of Petrol per Liter -->
+        <label for="Cost">Cost of Petrol per Liter:</label><br>
+        <input type="number" id="Cost" name="Cost" placeholder="Enter Cost (1.72)" step="any"><br>
+
+        <!-- Input Amount Purchased -->
+        <label for="Amt">Amount Purchased:</label><br>
+        <input type="number" id="Amt" name="Amt" placeholder="Enter Amount (0)" step="any"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <p id="final">Total Cost: </p>
+
+    <script>
+        function Calculate(event) {
+            event.preventDefault(); // Prevent form submission from reloading the page
+
+            // Get values and convert to numbers
+            let cost = parseFloat(document.getElementById("Cost").value);
+            let amount = parseFloat(document.getElementById("Amt").value);
+
+            // Check if inputs are valid
+            if (isNaN(cost)) {
+                cost = 1.72;
+            }
+            if (isNaN(amount)) {
+               amount = 0;
+            }
+
+            // Calculate total cost
+            let totalCost = cost * amount;
+
+            // Display result
+            document.getElementById("final").innerHTML = `Total Cost: ${totalCost.toFixed(2)}`;
+        }
+    </script>
+
+</body>
+</html>
